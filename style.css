@@ -1,0 +1,246 @@
+:root {
+    --heading-color: #111827;
+    --text-color: #4B5563;
+    --bg-color: #FFF;
+    --border-color: #F3F4F6;
+    --primary-text: "Inter";
+    --secondary-text: "Inter";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    color: var(--heading-color);
+    font-family: var(--primary-text);
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: var(--bg-color);
+    padding: 16px 112px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: var(--primary-text);
+    font-size: 32px;
+}
+
+nav .desktop-menu {
+    display: flex;
+    gap: 32px;
+}
+
+nav .desktop-menu li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav .desktop-menu li a {
+    color: var(--text-color);
+}
+
+.mobile-menu button {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: var(--heading-color);
+    color: var(--bg-color);
+    border-radius: 10px;
+}
+
+.mobile-menu img:nth-of-type(2) {
+    display: none;
+}
+
+nav a {
+    font-size: 16px;
+}
+
+@media screen and (max-width:768px) {
+    nav .desktop-menu li {
+        display: none;
+    }
+
+    .mobile-menu img:nth-child(1) {
+        display: none;
+    }
+
+    button {
+        display: none;
+    }
+
+    .mobile-menu img:nth-child(2) {
+        display: block;
+    }
+
+    nav .mobile-menu {
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+
+    nav {
+        padding: 24px 16px;
+    }
+}
+
+.profile {
+    background-color: var(--bg-color);
+    border-bottom: 2px solid var(--border-color);
+    padding: 80px 96px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.profile .avt {
+    width: 330px;
+    height: 280px;
+    padding: 0 40px 40px 80px;
+}
+
+.profile .profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile .profile-text {
+    font-family: var(--primary-text);
+}
+
+.text h2 {
+    font-family: var(--primary-font);
+    font-size: 60px;
+    color: var(--heading-color);
+    line-height: 90%;
+    padding-bottom: 8px;
+}
+
+.text p {
+    color: var(--text-color);
+    font-size: 16px;
+    padding-bottom: 48px;
+}
+
+.address {
+    display: flex;
+    color: var(--text-color);
+}
+
+.daucham {
+    display: flex;
+    color: var(--text-color);
+}
+
+.link img {
+    padding: 4px;
+    padding-top: 48px;
+
+}
+
+@media screen and (max-width:768px) {
+    .profile {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .profile .avt {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.skills .title-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.skills .text-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.title-skills button {
+    background-color: var(--text-color);
+}
+
+.skillsecond {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 86.87px;
+}
+
+.skillsecond p {
+    color: var(--text-color);
+}
+
+.skills {
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width:768px) {}
+
+.work .title-work {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.title-work button {
+    background-color: var(--text-color);
+}
+
+.work .text-work {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+span h2 {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    color: var(--heading-color);
+    padding-bottom: 24px;
+}
+
+span p {
+    color: var(--text-color);
+    font-size: 16px;
+    padding-bottom: 48px;
+}
