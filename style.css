@@ -206,7 +206,12 @@ nav a {
     padding-bottom: 100px;
 }
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .skillsecond{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 
 .work .title-work {
     display: flex;
